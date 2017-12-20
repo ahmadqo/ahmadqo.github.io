@@ -1,0 +1,213 @@
+/*MENGATUR TAMPILAN LAYOUT*/
+    *{
+      box-sizing:border-box;
+    }
+    body{
+      font-family:helvetica,sans-serif,arial;
+    }
+    /*.container{
+      width: 800px;
+      margin: auto;
+    }
+    .container-fluid{
+      padding: 20px;
+      margin:0;
+    }*/
+    .row:after{
+      content: " ";
+      clear: both;
+      display: block;
+    }
+    [class*="col-"]{
+      float: left;
+      padding-right: 15px;
+    }
+    [class*="col-"]:last-of-type{
+      padding-right: 0;
+    }
+    .col-1{width: 8.33%}
+    .col-2{width: 16.66%}
+    .col-3{width: 25%}
+    .col-4{width: 33.33%}
+    .col-5{width: 41.66%}
+    .col-6{width: 50%; padding-top: 10px;}
+    .col-7{width: 58.33%}
+    .col-8{width: 66.66%}
+    .col-9{width: 75%}
+    .col-10{width: 83.33%}
+    .col-11{width: 91.66%}
+    .col-12{width: 100%}
+
+    .panel{
+      padding: 10px;
+      margin-top:10px;
+    }
+    @media screen and (max-width: 485px){
+      .container, .container-fluid{
+        width: 100%;
+      }
+      [class*="col-"]{
+        width: 100%;
+        padding-right: 0;
+        float: none;
+      }
+    }
+    @media screen and (max-width: 800px){
+      .container, .container-fluid{
+        width: 100%;
+      }
+    }
+
+/*MENGATUR HEADER PALING ATAS */
+    .header {
+      background-image: url('img/header.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: auto;
+      padding: 35px;
+    }
+    @media only screen and (min-width: 400px) {
+      .header {
+        background-image: url('img/header.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 250px;
+        padding: 35px;
+      }
+    }
+
+/*MENGATUR KONTEN SEBELAH KIRI*/
+    .row .col-4 .panel{
+      word-break: break-all;
+      text-align: center;
+      background: #eee;
+    }
+
+/*MENGATUR IMAGE DARI LOGO GOLANG*/
+    .row .col-4 .panel .content img{
+      width: 50px;
+      height: 60px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+/*KONTEN SEBELAH KIRI BAGIAN FOTO PROFILE*/
+    .erb-image-wrapper{
+        max-width:90%;
+        height:auto;
+        position: relative;
+        display:block;
+        margin:0 auto;
+    }
+    .erb-image-wrapper img{
+        max-width:100% !important;
+        height:auto;
+        display:block;
+        border-radius: 8px;
+    }
+
+/*MENGATUR KONTEN TENGAH BAGIAN BUTTON DROPDOWN*/
+    button.accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 3px;
+      width: 50%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 20px;
+      transition: 0.4s;
+      border-radius: 10px;
+      box-shadow: 0 9px #999;
+    }
+    button.accordion.active, button.accordion:hover {
+        background-color: #ccc;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    div.panelcording {
+        padding: 0 10px;
+        display: none;
+        background-color: white;
+        margin:10px;
+    }
+/*MENGATUR BAGIAN ABOUTME TABLE STYLE*/
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-left: 10px;
+    }
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:hover{background-color:#f5f5f5}
+    tr:nth-child(even){background-color: #f2f2f2}
+
+/*MENGATUR BAGIAN EDUCATION*/
+    div.panelcording .panelEdu img{
+      width: 30px;
+      height: 30px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+/*MENGATUR BAGIAN KANAN*/
+    .row .col-2 .panel{
+      background: #eee;
+    }
+
+/*MENGATUR BAGIAN CONTACT*/
+    .row .col-4 .panel .contact{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .row .col-4 .panel .contact img{
+      width: 30px;
+      height: 30px;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+/*MENGATUR SETIAP PENULISAN PARAGRAP*/
+    p{
+      text-align: justify;
+      text-indent: 0.3in;
+      margin: 15px;
+      line-height: 150%;
+    }
+
+/*MENGATUR BAGIAN SKILL COMPETENCE*/
+    .row .col-6 .panelcording .row .col-3 .skill img{
+      width: 70px;
+      height: 70px;
+      display:block;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+    @media only screen and (min-width: 400px) {
+      .row .col-6 .panelcording .row .col-3 .skill img {
+        width: 100%;
+        height: 100%;
+        display:block;
+        border-radius: 10px;
+        margin-top: 5px;
+      }
+    }
+
+/*MENGATUR GALERI FOTO*/
+    .row .col-2 .panel .judul {
+        text-align: center;
+        height: 50px;
+    }
+    .row .col-2 .panel .column {
+        float: left;
+        width: 100%;
+        /*padding-right: 20px;*/
+    }
+    .row .col-2 .panel .column img {
+        margin-top: 5px;
+    }
