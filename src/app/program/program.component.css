@@ -1,0 +1,17 @@
+ng-template mat-tab-label{
+    background-color: #0099ff;
+}
+.subprofile{
+  background-color: white;
+}
+h1, h3, h6, p, b, ol, li{
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
