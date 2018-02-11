@@ -59,14 +59,14 @@
     }
 
 /*MENGATUR HEADER PALING ATAS */
-    .header {
+  /*  .header {
       background-image: url('img/header.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: auto;
       padding: 35px;
-    }
+    }*/
     @media only screen and (min-width: 400px) {
       .header {
         background-image: url('img/header.jpg');
