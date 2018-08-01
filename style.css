@@ -181,7 +181,7 @@
     }
 
 /*MENGATUR BAGIAN SKILL COMPETENCE*/
-    .row .col-6 .panelcording .row .col-3 .skill img{
+.skill img{
       width: 70px;
       height: 70px;
       display:block;
@@ -189,7 +189,7 @@
       margin-top: 5px;
     }
     @media only screen and (min-width: 400px) {
-      .row .col-6 .panelcording .row .col-3 .skill img {
+.skill img {
         width: 100%;
         height: 100%;
         display:block;
